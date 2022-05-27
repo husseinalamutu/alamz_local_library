@@ -3,9 +3,7 @@
 	padding: 0;
 	list-style: none;
 }
-.col-sm-2{
-	background-color: pink;
-}
 .col-sm-10{
-	background-color: #f6f6f6;
+	padding: 20px;
 }
+
