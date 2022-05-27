@@ -69,7 +69,7 @@ from django.db.models import BigIntegerField
 
 class BookInstance(models.Model):
     """Model representing a specific copy of a book (i.e. that can be borrowed from the library)."""
-    id = BigIntegerField(primary_key=True,help_text="Unique ID for this particular book across whole library")
+    
     book = models.ForeignKey('Book', on_delete=models.RESTRICT, null=True)
     imprint = models.CharField(max_length=200)
     due_back = models.DateField(null=True, blank=True)
